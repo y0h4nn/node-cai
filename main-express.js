@@ -46,7 +46,7 @@ app.get('/messages/:id', (req, res) => {
 
     if(existing){
         res.status(200);
-        res.send(JSON.stringify(existing[0]));
+        res.send(JSON.stringify(existing));
     }
     else{
         res.status(400);
